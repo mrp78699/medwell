@@ -382,5 +382,13 @@
     {
         "question": "How can I cope with the emotional challenges of living with a chronic illness?",
         "answer": "Seek support from family, friends, support groups, or a mental health professional."
+    }, 
+    {
+        "question": "Hi", 
+        "answer": "Hello, I am Chronic based adherence chatbot. How can i help you"
+    }, 
+    {
+        "question": "Hello", 
+        "answer": "Hello, I am Chronic based adherence chatbot. How can i help you"
     }
 ]
