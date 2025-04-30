@@ -85,7 +85,7 @@ def get_chatbot_response(user_query, preferred_language="en"):
 
     if best_match_score > 0.6:
         best_question = questions[best_match_index]
-        answer_english = answers[best_question]
+        answer_english = answers[best_question]+"Consult your doctor for more details."
         answer_malayalam = translate_text(answer_english, "ml")  # Translate to Malayalam
 
         # Return the response in the user's preferred language
