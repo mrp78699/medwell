@@ -390,5 +390,9 @@
     {
         "question": "Hello", 
         "answer": "Hello, I am Chronic based adherence chatbot. How can i help you"
+    },
+    {
+        "question": "is cough symptom of asthma",
+        "answer": "Yes, coughing is a common symptom of asthma. In some cases, it can be the only noticeable symptom, especially in a condition called cough-variant asthma. Asthma coughing is often triggered by factors like exercise, allergens, or exposure to cold air."
     }
 ]
