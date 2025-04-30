@@ -81,24 +81,33 @@ def get_chatbot_response(user_query, preferred_language="en"):
     similarities = cosine_similarity(user_vector, tfidf_matrix).flatten()
 
     best_match_index = np.argmax(similarities)
-    best_match_score = similarities[best_match_index]
-
-    if best_match_score > 0.6:
-        best_question = questions[best_match_index]
-        answer_english = answers[best_question]+"Consult your doctor for more details."
-        answer_malayalam = translate_text(answer_english, "ml")  # Translate to Malayalam
-
-        # Return the response in the user's preferred language
+    if best_matcch_index == "Hi" | "hi" | "Hello" | "hello":
+        answer_english = "Hello, I am chronic based chatbot. How can i help you ?"
+        answer_malayalam = translate_text(answer_english, "ml")
+        best_match_score = 0
         return {
             "answer": answer_malayalam if preferred_language == "ml" else answer_english,
             "match_score": best_match_score
         }
     else:
-        log_unanswered_question(user_query)  # Log unanswered question
-        no_answer_english = "No answer available right now."
-        no_answer_malayalam = translate_text(no_answer_english, "ml")
+        best_match_score = similarities[best_match_index]
 
-        return {
-            "answer": no_answer_malayalam if preferred_language == "ml" else no_answer_english,
-            "match_score": best_match_score
-        }
+        if best_match_score > 0.6:
+            best_question = questions[best_match_index]
+            answer_english = answers[best_question]+"Consult your doctor for more details."
+            answer_malayalam = translate_text(answer_english, "ml")  # Translate to Malayalam
+
+            # Return the response in the user's preferred language
+            return {
+                "answer": answer_malayalam if preferred_language == "ml" else answer_english,
+                "match_score": best_match_score
+            }
+        else:
+            log_unanswered_question(user_query)  # Log unanswered question
+            no_answer_english = "No answer available right now."
+            no_answer_malayalam = translate_text(no_answer_english, "ml")
+
+            return {
+                "answer": no_answer_malayalam if preferred_language == "ml" else no_answer_english,
+                "match_score": best_match_score
+            }
