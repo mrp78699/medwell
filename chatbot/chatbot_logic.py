@@ -80,8 +80,10 @@ def get_chatbot_response(user_query, preferred_language="en"):
     user_vector = vectorizer.transform([user_query])
     similarities = cosine_similarity(user_vector, tfidf_matrix).flatten()
 
+    greeting_words = ["Hi", "hi", "Hello", "hello"]
+
     best_match_index = np.argmax(similarities)
-    if best_matcch_index == "Hi" | "hi" | "Hello" | "hello":
+    if user_query == greeting_words:
         answer_english = "Hello, I am chronic based chatbot. How can i help you ?"
         answer_malayalam = translate_text(answer_english, "ml")
         best_match_score = 0
