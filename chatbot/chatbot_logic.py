@@ -83,7 +83,7 @@ def get_chatbot_response(user_query, preferred_language="en"):
     greeting_words = ["Hi", "hi", "Hello", "hello"]
 
     best_match_index = np.argmax(similarities)
-    if user_query = greeting_words:
+    if user_query == greeting_words:
         answer_english = "Hello, I am chronic based chatbot. How can i help you ?"
         answer_malayalam = translate_text(answer_english, "ml")
         best_match_score = 0
