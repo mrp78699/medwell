@@ -77,7 +77,6 @@ def get_chatbot_response(user_query, preferred_language="en"):
 
     # Preprocess the translated question
     user_query = preprocess(user_query)
-    print(user_query)
     user_vector = vectorizer.transform([user_query])
     similarities = cosine_similarity(user_vector, tfidf_matrix).flatten()
 
