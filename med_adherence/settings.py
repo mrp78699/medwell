@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.1.5','0.0.0.0','127.0.0.1','192.168.29.67','*']
 
-CSRF_TRUSTED_ORIGINS = ['http://192.168.1.5:8000','http://127.0.0.1:8000','http://192.168.29.67']
+CSRF_TRUSTED_ORIGINS = ['http://192.168.1.5:8000','http://127.0.0.1:8000','http://192.168.29.67','https://medwell-429166644600.asia-south1.run.app']
 
 
 # Application definition
@@ -163,7 +163,6 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Flutter Web
     "http://127.0.0.1:8000", # Django Backend
-    "*",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
