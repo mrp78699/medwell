@@ -161,7 +161,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Flutter Web
-    "http://127.0.0.1:8000",  # Django Backend
+    "http://127.0.0.1:8000", # Django Backend
+    "*",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
