@@ -6,7 +6,7 @@ python manage.py migrate
 echo "Creating superuser..."
 echo "from django.contrib.auth import get_user_model; \
 User = get_user_model(); \
-User.objects.create_superuser('admin', 'admin@example.com', 'adminpassword')" \
+User.objects.create_superuser('admin', 'mohdrashid.p7@gmail.com', 'Admin@78699')" \
 | python manage.py shell
 
 echo "Starting Gunicorn..."
