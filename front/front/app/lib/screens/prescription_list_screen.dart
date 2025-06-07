@@ -6,7 +6,7 @@ import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 
-const String BASE_URL = "http://192.168.29.67:8000/api";
+const String BASE_URL = "https://medwell-429166644600.asia-south1.run.app/api";
 const Color primaryGreen = Color(0xFF4CAF50);
 
 class PrescriptionListScreen extends StatefulWidget {
