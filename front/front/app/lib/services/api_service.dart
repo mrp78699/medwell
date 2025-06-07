@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  final String baseUrl = "http://192.168.29.67:8000/api/";
+  final String baseUrl = "https://medwell-429166644600.asia-south1.run.app/api/";
 
   // ✅ Register User
   Future<bool> register(String name, String email, String phone, String password, String confirmpassword) async {
