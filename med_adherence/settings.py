@@ -89,18 +89,19 @@ WSGI_APPLICATION = "med_adherence.wsgi.application"
 
 
 import dj_database_url
+
 import os
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_db',
-        'USER': 'django_user',
-        'PASSWORD': 'R_=hf>3(yy8$TeJ3',
         'HOST': '/cloudsql/medwell-462213:asia-south1:django-db',
-        'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'NAME': 'postgres',
     }
 }
+
 
 # Use Render's PostgreSQL database if available
 if 'DATABASE_URL' in os.environ:
