@@ -23,4 +23,5 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8080
 
 # Start server
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "med_adherence.wsgi:application"]
+CMD ["./entrypoint.sh"]
+
