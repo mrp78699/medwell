@@ -23,6 +23,6 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8080
 
 # Start server
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "your_project_name.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "med_adherence.wsgi:application"]
 
 
