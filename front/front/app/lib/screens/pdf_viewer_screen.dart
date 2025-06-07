@@ -5,7 +5,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 import 'package:permission_handler/permission_handler.dart';
 
-const String BASE_URL = "http://192.168.29.67:8000/api/";
+const String BASE_URL = "https://medwell-429166644600.asia-south1.run.app/api/";
 
 class PDFViewerScreen extends StatefulWidget {
   final String fileUrl;
