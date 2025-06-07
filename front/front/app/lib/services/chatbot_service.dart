@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ChatbotService {
-  static const String apiUrl = "http://192.168.29.67:8000/api/chat/";
+  static const String apiUrl = "https://medwell-429166644600.asia-south1.run.app/api/chat/";
 
   static Future<Map<String, String>> getChatbotResponse(String question, String language) async {
     try {
