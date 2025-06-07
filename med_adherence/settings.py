@@ -94,11 +94,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME', 'postgres'),  # Use environment variable, fallback to local
-        'USER': os.getenv('DB_USER', 'postgres'),
-        'PASSWORD': os.getenv('DB_PASSWORD', '12345678'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),  # Default to localhost for local dev
-        'PORT': os.getenv('DB_PORT', '5432'),
+        'NAME': 'django_db',
+        'USER': 'django_user',
+        'PASSWORD': 'R_=hf>3(yy8$TeJ3',
+        'HOST': '/cloudsql/medwell-462213:asia-south1:django-db',
+        'PORT': '5432',
     }
 }
 
