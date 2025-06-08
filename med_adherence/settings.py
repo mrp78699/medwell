@@ -96,9 +96,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': '/cloudsql/medwell-462213:asia-south1:django-db',
-        'USER': 'postgres',
+        'USER': 'django_user',
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'NAME': 'postgres',
+        'NAME': 'django_db',
     }
 }
 
