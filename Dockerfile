@@ -19,10 +19,12 @@ COPY . .
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
+# Copy entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 # Expose port
 EXPOSE 8080
 
-# Start server
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "med_adherence.wsgi:application"]
-
-
+# Run entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
