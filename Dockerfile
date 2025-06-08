@@ -16,6 +16,9 @@ RUN pip install -r requirements.txt
 # Copy app
 COPY . .
 
+# ✅ Copy chatbot data
+COPY chatbot_data.json /app/chatbot_data.json
+
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
