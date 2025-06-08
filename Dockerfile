@@ -18,6 +18,7 @@ COPY . .
 
 # ✅ Copy chatbot data
 COPY chatbot_data.json /app/chatbot_data.json
+COPY unanswered_questions.json /app/unanswered_questions.json
 
 # Collect static files
 RUN python manage.py collectstatic --noinput
