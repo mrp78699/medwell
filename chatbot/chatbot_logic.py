@@ -89,7 +89,7 @@ def get_chatbot_response(user_query, preferred_language="en"):
     best_match_index = np.argmax(similarities)
     best_match_score = similarities[best_match_index]
 
-    if best_match_score > 0.4:
+    if best_match_score > 0.6:
         best_question = questions[best_match_index]
         answer_english = answers[best_question] + " Consult your doctor for more details."
         answer_malayalam = translate_text(answer_english, "ml")
