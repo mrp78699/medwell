@@ -96,7 +96,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': '103.70.197.62',
-        'PORT': '5432'
+        'PORT': '5432',
         'USER': 'pwc',
         'PASSWORD': "pass",
         'NAME': 'pwcdb',
