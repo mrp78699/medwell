@@ -98,10 +98,11 @@ DATABASES = {
         'HOST': '103.70.197.62',
         'PORT': '5432',
         'USER': 'pwc',
-        'PASSWORD': "pass",
+        'PASSWORD': 'pass',
         'NAME': 'pwcdb',
     }
 }
+
 
 
 # Use Render's PostgreSQL database if available
