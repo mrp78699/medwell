@@ -95,10 +95,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '/cloudsql/serene-essence-419307:us-central1:django-db',
-        'USER': 'postgres',
-        'PASSWORD': 'Rashid@123',
-        'NAME': 'django_db',
+        'HOST': '34.122.80.1',         # Cloud SQL Public IP
+        'PORT': '5432',                 # Default PostgreSQL port
+        'USER': 'django_user',          # Your DB username
+        'PASSWORD': 'Rashid@123',  # Use env var
+        'NAME': 'django_db',            # Your database name
     }
 }
 
