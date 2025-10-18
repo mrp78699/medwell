@@ -95,7 +95,7 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'serene-essence-419307:us-central1:django-db',
+        'HOST': '/cloudsql/medwell-462213:asia-south1:django-dbserene-essence-419307:us-central1:django-db',
         'USER': 'postgres',
         'PASSWORD': 'Rashid@123',
         'NAME': 'django_db',
