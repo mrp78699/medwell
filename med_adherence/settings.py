@@ -95,11 +95,10 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '103.70.197.62',
-        'PORT': '5432',
+        'HOST': 'serene-essence-419307:us-central1:django-db',
         'USER': 'postgres',
-        'PASSWORD': ' ',
-        'NAME': 'pwcdb',
+        'PASSWORD': 'Rashid@123',
+        'NAME': 'django_db',
     }
 }
 
