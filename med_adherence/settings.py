@@ -95,10 +95,11 @@ import os
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '/cloudsql/medwell-462213:asia-south1:django-db',
-        'USER': 'django_user',
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'NAME': 'django_db',
+        'HOST': '103.70.197.62',
+        'PORT': '5432'
+        'USER': 'pwc',
+        'PASSWORD': "pass",
+        'NAME': 'pwcdb',
     }
 }
 
